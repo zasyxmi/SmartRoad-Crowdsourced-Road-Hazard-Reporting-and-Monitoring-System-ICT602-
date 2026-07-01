@@ -15,7 +15,7 @@ SmartRoad/          ← Android app (this repo root)
   app/
   gradle/
   ...
-admin-web/          ← Vue.js admin panel (separate project, same repo)
+SmartRoad-Admin/    ← Vue.js admin panel (separate project, same repo)
   src/
   package.json
   vite.config.js
@@ -47,12 +47,12 @@ Build in Android Studio: **Build > Make Project** (`Ctrl+F9`). Run on device/emu
 
 ## Admin web panel build commands
 
-Run from `admin-web/`:
+Run from `SmartRoad-Admin/`:
 
 ```
 npm install       # first-time setup
 npm run dev       # dev server (Vite)
-npm run build     # production build → admin-web/dist/
+npm run build     # production build → SmartRoad-Admin/dist/
 ```
 
 ## Android tech stack (do not change without discussion)
@@ -104,7 +104,7 @@ Hazard `type` values: `Pothole`, `Flood`, `Accident`, `Fallen Tree`, `Traffic Li
 6. **ProfileActivity** — initials avatar, name/email, live Total/Resolved stats, About button, logout with confirmation
 7. **AboutActivity** — developer info, copyright, tappable GitHub URL (rubric requirement)
 
-## Admin panel pages (to build in admin-web/)
+## Admin panel pages (to build in SmartRoad-Admin/)
 
 1. **Dashboard** — summary cards (total users, total reports, open, resolved) + recent reports table
 2. **Manage Reports** — searchable/filterable table (type, status, date); View / Update Status / Delete actions
